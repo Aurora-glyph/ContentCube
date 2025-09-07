@@ -32,6 +32,8 @@ import numpy as np
 import cv2
 from pydub import AudioSegment
 
+PORT = int(os.environ.get("PORT", 8000))
+
 # Load environment variables from .env file
 load_dotenv()
 
@@ -55,7 +57,12 @@ app = FastAPI(title="CodeEd Universal Content Repurposer")
 # Enable CORS for frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://localhost:3000"],
+    allow_origins=[
+        "http://localhost:3000", 
+        "https://localhost:3000",
+        "https://*.railway.app",  # Add this
+        "https://*.up.railway.app"  # Add this too
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -808,4 +815,4 @@ async def root():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=PORT) 
