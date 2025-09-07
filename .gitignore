@@ -1,0 +1,613 @@
+# CodeEd Universal Content Repurposer .gitignore
+
+# Environment variables and secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+config/secrets.yml
+config/master.key
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pyvenv.cfg
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage
+.grunt
+
+# Bower dependency directory
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons
+build/Release
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript v1 declaration files
+typings/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache
+.parcel-cache
+
+# Next.js build output
+.next
+out
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# Temporary folders
+tmp/
+temp/
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# React build
+build/
+.eslintcache
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.metadata
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
+.vscode/
+.history/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Icon?
+*~
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+
+# AI/ML model files and cache
+models/
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.pb
+*.ckpt
+*.pth
+*.pt
+*.onnx
+whisper_cache/
+huggingface_cache/
+.cache/
+cached_models/
+
+# Temporary processing files
+temp_files/
+processed_files/
+downloads/
+uploads/
+tmp_*
+*.tmp
+*.temp
+
+# Media files (large files that shouldn't be in git)
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.mkv
+*.mp3
+*.wav
+*.ogg
+*.m4a
+*.flac
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.webp
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+
+# But allow small sample files for testing
+!sample_files/
+!test_files/
+sample_files/*.mp4
+sample_files/*.avi
+sample_files/*.mov
+sample_files/*.mp3
+sample_files/*.wav
+test_files/*.mp4
+test_files/*.avi
+test_files/*.mov
+test_files/*.mp3
+test_files/*.wav
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+.docker/
+
+# Kubernetes
+*.yaml.bak
+*.yml.bak
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# AWS
+.aws/
+*.pem
+
+# Google Cloud
+gcloud/
+*.json
+service-account-*.json
+
+# Azure
+.azure/
+
+# Monitoring and profiling
+*.prof
+*.trace
+flame_*.svg
+cpu_*.prof
+mem_*.prof
+
+# Testing artifacts
+screenshots/
+test_results/
+test_reports/
+.coverage_html/
+
+# Development databases
+dev.db
+test.db
+local.db
+
+# API keys and tokens (additional patterns)
+*api_key*
+*secret*
+*token*
+*password*
+credentials.json
+auth.json
+config.json
+
+# Backup files
+*.backup
+*.bak
+*.old
+*.orig
+
+# Temporary editor files
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+Sessionx.vim
+.netrwhist
+*~
+tags
+[._]*.un~
+
+# macOS
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Redis dump file
+dump.rdb
+
+# FastAPI
+.pytest_cache/
+__pycache__/
+
+# Uvicorn
+uvicorn.pid
+
+# Gunicorn
+gunicorn.pid
+
+# Nginx logs
+access.log
+error.log
+
+# SSL certificates
+*.crt
+*.key
+*.csr
+*.pem
+*.p12
+*.pfx
+
+# Local configuration overrides
+local_settings.py
+local_config.py
+development.ini
+production.ini
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Profiling output
+*.prof
+
+# Core dumps
+core.*
+
+# Application specific
+processed_content/
+output_files/
+export_files/
+transcriptions/
+extracted_frames/
+audio_segments/
+
+# Monitoring
+newrelic.ini
+.newrelic.yml
+
+# Sentry
+.sentryclirc
+
+# Localization
+*.mo
+
+# Documentation builds
+_build/
+site/
+docs/build/
+
+# Package files
+*.deb
+*.rpm
+*.pkg
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Temporary network files
+*.pid
+*.seed
+*.pid.lock
+
+# Optional REPL history
+.repl_history
+
+# ESLint cache
+.eslintcache
+
+# Stylelint cache
+.stylelintcache
+
+# Prettier cache
+.prettiercache
+
+# Package lock files (choose one approach)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Storybook
+.out
+.storybook-out
+storybook-static
+
+# Rush
+common/deploy/
+common/temp/
+common/autoinstallers/*/.npmrc
+**/.rush/temp/
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# TypeScript
+*.tsbuildinfo
+
+# Output directories
+out/
+dist/
+lib/
+
+# Local development
+.local/
+.development/
+
+# Performance monitoring
+*.cpuprofile
+*.heapprofile
+*.heapsnapshot
+
+# Application logs
+application.log
+app.log
+server.log
+
+# Process files
+*.pid
+*.lock
+
+# Runtime configuration
+runtime.json
+app.config
+
+# Local data files
+data/
+datasets/
+training_data/
+test_data/
